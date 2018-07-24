@@ -16,6 +16,9 @@ test('should accept \n as separator', () => {
     expect(add('1\n2,3')).toBe(6);
 });
 
+test('should accept a custom separator', () => {
+    expect(add('//;\n1,2;3')).tobBe(6);
+});
 
 // 'should accept a custom separator'
 // '//;\n1,2;3'
