@@ -17,11 +17,8 @@ test('should accept \n as separator', () => {
 });
 
 test('should accept a custom separator', () => {
-    expect(add('//;\n1,2;3')).tobBe(6);
+    expect(add('//;\n1,2;3')).toBe(6);
 });
-
-// 'should accept a custom separator'
-// '//;\n1,2;3'
 
 // 'should throw negative provided int'
 // '-5,2,-10,9'
