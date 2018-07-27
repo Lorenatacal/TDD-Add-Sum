@@ -29,6 +29,7 @@ In order to start working on this Kata I had to fisrt install Jest on my termina
         - Writting the test
             - I wrote the test that is accepting "\n" as the separator;
             - I wrote the test that is accepting a custom separator "// '//;\n1,2;3";
+            - I wrote the test that is going to throw an error when a negativ number is given, by using the method throw;
         - writting the Code:
             - I wrote the code that made this test to pass by calling the method replace and changed the separator "\n" with ", ";
             - I wrote the test that made the test that accepts a custom seperator. In order to do this I have created the variable number, asigned it a regex that will return a new array that is only returning the numbers from the string. I have created a new array (arr) and I have assigned to this the match of numbers from the given string by calling the method match on the given string and assigning as an argument the variable number. I have checked if the test is passing by using npm run test assuming that the test is going to pass and it did!;
