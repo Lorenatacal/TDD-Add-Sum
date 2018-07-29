@@ -1,5 +1,8 @@
 function add(string) {
     let number = /\d+/g;
+    if (string.includes("-")) {
+        throw "negative provided int";
+    }
     if (string.length == 1) {
         return parseInt(string);
     }
@@ -11,7 +14,6 @@ function add(string) {
            return totalSum;
         }, 0);
         return sum;
-        console.log(sum)
     }
     return 0;
 }

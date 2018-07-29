@@ -21,7 +21,7 @@ test('should accept a custom separator', () => {
 });
 
 test('should throw negative provided int', () => {
-    expected(add('-5,2,-10,9')).toThrow();
+    expect(() => add('-5,2,-10,9')).toThrow();
 });
 
 // 'should throw negative provided int'
